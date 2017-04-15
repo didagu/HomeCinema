@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/dialog_title"
+        android:text="Choose a sorting order"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:id="@+id/radio_group"
+        android:layout_below="@+id/dialog_title"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rd_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Rated" />
+
+        <RadioButton
+            android:id="@+id/rd_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/radio_group"
+        android:id="@+id/ok_button"
+        android:text="OK" />
+</RelativeLayout>
