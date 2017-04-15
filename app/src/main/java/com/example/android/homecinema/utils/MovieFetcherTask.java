@@ -1,4 +1,4 @@
-package com.example.android.homecinema.Utils;
+package com.example.android.homecinema.utils;
 
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -74,6 +74,9 @@ public class MovieFetcherTask extends AsyncTask<String,Void,Movies[]> {
         try {
             URL url = new URL(uri.toString());
             urlConnection = (HttpURLConnection) url.openConnection();
+            // set the connection timeout to 5 seconds and the read timeout to 10 seconds
+            urlConnection.setConnectTimeout(5000);
+            urlConnection.setReadTimeout(10000);
             urlConnection.setRequestMethod("GET");
             urlConnection.connect();
 

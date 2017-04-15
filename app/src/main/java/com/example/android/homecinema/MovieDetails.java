@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.homecinema.Utils.Movies;
+import com.example.android.homecinema.utils.Movies;
 import com.squareup.picasso.Picasso;
 
 /**

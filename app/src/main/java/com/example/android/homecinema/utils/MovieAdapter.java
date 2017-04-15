@@ -1,4 +1,4 @@
-package com.example.android.homecinema.Utils;
+package com.example.android.homecinema.utils;
 
 import android.content.Context;
 import android.view.LayoutInflater;
